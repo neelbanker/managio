@@ -1,0 +1,255 @@
+@charset "utf-8";
+/* CSS Document */
+/***************************************************RESET CSS********************************************************/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video, input {
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:16px;
+	font-style:normal;
+	background-color:#E8E8E8;
+	font-size:16px;
+	line-height:1;	
+	letter-spacing:-1;
+}
+
+html, body {
+	height:100%;
+}
+
+img {
+	max-width:100%;
+}
+
+li {
+	list-style:none;
+}
+
+a {
+	text-decoration:none;
+}
+
+:-webkit-input-placeholder { /* For WebKit browsers */
+	font-weight:bold;
+}
+
+:-moz-placeholder { /* For Mozilla Firefox 4 to 18 */
+	font-weight:bold;
+}
+::-moz-placeholder { /* For Mozilla Firefox 19+ */
+	font-weight:bold;
+}
+:-ms-input-placeholder { /* For Internet Explorer 10+ */
+	font-weight:bold;
+}
+
+/************************************************GLOBLE CSS********************************************************/
+h1 {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:72px;
+	line-height:1.5;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+h2 {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:60px;
+	line-height:1.5;
+	text-align:center;
+	text-transform:uppercase;
+}
+
+h3 {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:48px;
+	line-height:1.5;
+	text-align:center;
+}
+
+h4 {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:36px;
+	line-height:1.5;
+	text-align:center;
+}
+
+h5 {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:30px;
+	line-height:1.5;
+}
+
+h6 {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:24px;
+	line-height:1.5;
+}
+
+p {
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:16px;
+	line-height:1;
+	letter-spacing:-1;
+	margin-bottom:10px;
+}
+
+.bgback {
+	background-color:#e8e8e8;
+}
+
+.tableRow {
+	height:100%;
+	width:100%;
+	display:table;
+	vertical-align:middle;
+	appearance:normal;
+	border:none;
+}
+
+.tableCell {
+	height:100%;
+	width:100%;
+	display:table-cell;
+	vertical-align:middle;
+	appearance:normal;
+	border:none;
+}
+
+.logo {
+	width:100%;
+	float:left;
+	text-align:center;
+}
+
+.wrapper {
+	width:1000px;
+	margin:0 auto;
+}
+
+input[type="email"], input[type="password"], input[type="text"], input[type="date"] {
+	width:90%;
+	float:left;
+	padding:2% 5%;
+	margin:10px 0px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-size:14px;
+	background-color:#fff;
+	border:1px solid #92278f;
+	outline:none;
+}
+
+textarea {
+	width:89%;
+	height:100%;
+	float:left;
+	padding:2% 5%;
+	margin:10px 0px;
+	resize:none;
+	font-size:14px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	background-color:#fff;
+	border:1px solid #92278f;
+	outline:none;
+}
+	
+select{
+	width:99.3%;
+	float:left;
+	padding:3% 5%;
+	margin-bottom:15px;
+	color:#4e4e4e;
+	font-size:14px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight:400;
+	border:1px solid #92278f;
+	outline:none;
+}
+
+
+.gender {
+	width:20%;
+	padding:4% 0% 0% 0%;
+	float:left;
+	font-size:14px;
+	font-family:"Lucida Sans Unicode", "Lucida Grande", sans-serif;
+	font-weight:400;
+	color:#4e4e4e;
+}
+
+input[type="checkbox"] {
+	width:5%;
+	float:left;
+	margin:1px 0px;
+	border:none;
+	outline:1px solid #922578f;
+	color:#92278f;
+}
+
+.button {
+	width:100%;
+	float:left;
+	padding:3% 5%;
+	margin:10px 0px;
+	color:#FFF;
+	font-style:normal;
+	font-size:14px;
+	font-weight:600;
+	line-height:1;
+	background-color:#92278f;
+	border-radius:10px;
+	border:1px solid #fff;
+}
+
+.button:hover {
+	color:#92278f;
+	background-color:#fff;
+	border:1px solid #92278f;
+}
+
+/*************************************************** LOGIN PAGE *******************************************************/
+
+#header1 {
+	width:100%;
+	float:left;
+	background-color:#0000;
+}
+
+#header1 .wrapper .logo img {
+	width:550px;
+	margin:1% 1% 1% 1%;
+}
+
+#content1 {
+	width:100%;
+	float:left;
+	background-color:#0000;
+}
+
+#content1 .wrapper #form {
+	width:40%;
+	float:left;
+	padding:3% 2.5%;
+	margin:0% 27.5%;
+	border:2px dashed #000;
+}
+#content1 .wrapper #form h1, #content .wrapper #form h3, #content .wrapper #form h4 {
+	color:#fffff;
+	text-transform:uppercase;
+}
+
+#content1 .wrapper #form .field p, #content .wrapper #form .field p a {
+	color:#92278f;
+}
+
+#content1 .wrapper #form h6 {
+	color:#4e4e4e;
+	text-align:center;
+}
+
+#content1 .wrapper #form .field p:hover a {
+	color:#dc143c;
+}
